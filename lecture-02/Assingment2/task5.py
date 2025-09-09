@@ -1,6 +1,6 @@
 talents=int(input("Enter talents: "))
 pounds=int(input("Enter pounds: "))
-lots=int(input("Enter lots: "))
+lots=float(input("Enter lots: "))
 
 grams=(talents*20*32*13.3)+(pounds*32*13.3)+(lots*13.3)
 
