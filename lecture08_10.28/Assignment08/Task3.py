@@ -9,9 +9,15 @@ class Car:
         self.current_speed += change_of_speed
         if self.current_speed > self.maximum_speed:
             self.current_speed = self.maximum_speed
-        if self.current_speed < 0:
+        elif self.current_speed < 0:
             self.current_speed = 0
 
     def drive(self, hours):
-        distance = self.current_speed * hours
-        self.travelled_distance += distance
+        self.travelled_distance += self.current_speed * hours
+
+my_car = Car("ABC-123", 142)
+my_car.current_speed = 60
+my_car.travelled_distance = 2000
+
+my_car.drive(1.5)
+print("Travelled Distance after driving:", my_car.travelled_distance, "km")

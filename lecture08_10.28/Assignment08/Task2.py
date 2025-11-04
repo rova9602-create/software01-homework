@@ -13,15 +13,12 @@ class Car:
         if self.current_speed < 0:
             self.current_speed = 0
 
-
 car = Car("ABC-123", 142)
 
 car.accelerate(30)
 car.accelerate(70)
 car.accelerate(50)
-
 print("Current speed after acceleration:", car.current_speed, "km/h")
 
 car.accelerate(-200)
-
 print("Speed after emergency brake:", car.current_speed, "km/h")
